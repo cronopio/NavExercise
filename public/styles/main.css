@@ -1,7 +1,8 @@
 @import "fonts.css";
 
 body {
-  background: #ec008c;
+  /* background: #ec008c; */
+  background: white;
   color: #fff;
 }
 
@@ -15,4 +16,45 @@ h1 {
   font: 20vmin/1 HUGEAvantGardeBold;
   letter-spacing: -0.06em;
   text-align: center;
+}
+
+.navbar {
+  position: relative;
+  min-height: 72px;
+  background: #ec008c;
+}
+
+.navbar-header {
+  padding: 24px;
+  float: left;
+}
+
+.navbar-logo {
+  background: url('/images/HUGE.png') no-repeat scroll center -40px / 60px 60px transparent;
+  width: 60px;
+  height: 24px;
+}
+
+.navbar-collapse {
+  margin-left: 132px;
+}
+
+.navbar > li {
+  float: left;
+}
+
+.navlist {
+  list-style: outside none none;
+  display: inline-block;
+}
+
+.navlist > li {
+  position: relative;
+  display: inline-block;
+}
+
+footer {
+  padding: 25px 0px;
+  text-align: center;
+  color: #000000;
 }
