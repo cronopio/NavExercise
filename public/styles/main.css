@@ -58,6 +58,7 @@ h1 {
   font: 3vmin/1 HUGEAvantGardeBold;
   text-align: center;
   letter-spacing: 0.05em;
+  position: relative;
 }
 
 .navlist > li a {
@@ -70,6 +71,11 @@ h1 {
   color: #ec008c;
   background: white;
 }
+
+.navlist > li a:hover + .dropdown-menu {
+    display:block;
+}
+
 
 header {
   background: url('/images/background-image.jpg') no-repeat 50% 50% / cover;
@@ -93,3 +99,46 @@ footer {
   text-align: center;
   color: #000000;
 }
+
+.dropdown > .dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu:hover {
+  display:block;
+}
+
+.dropdown-menu {
+  font: 3.5vmin/1 Galaxie;
+  padding-top: 60px;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 0px 0px;
+  margin: 20px 0px 0px;
+  font-size: 14px;
+  text-align: left;
+  list-style: outside none none;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border-radius: 4px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 16px;
+  clear: both;
+  font-weight: 400;
+  color: #333;
+  white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover {
+  background: #eee;
+}
+
