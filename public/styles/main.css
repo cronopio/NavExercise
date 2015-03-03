@@ -1,5 +1,10 @@
 @import "fonts.css";
 
+* {
+ margin: 0px;
+ padding: 0px;
+}
+
 body {
   /* background: #ec008c; */
   background: white;
@@ -44,17 +49,47 @@ h1 {
 }
 
 .navlist {
-  list-style: outside none none;
   display: inline-block;
+  padding-top:24px;
 }
 
 .navlist > li {
-  position: relative;
   display: inline-block;
+  font: 3vmin/1 HUGEAvantGardeBold;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.navlist > li a {
+  color: white;
+  text-decoration: none;
+  padding: 24px;
+}
+
+.navlist > li a:hover {
+  color: #ec008c;
+  background: white;
+}
+
+header {
+  background: url('/images/background-image.jpg') no-repeat 50% 50% / cover;
+  height: 640px;
+}
+
+.text-header {
+  font: 18vmin/1 HUGEAvantGardeBold;
+  text-align: center;
+  position:relative;
+  height: 300px;
+  width: 70%;
+  padding-top:200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
-  padding: 25px 0px;
+  font: 3.5vmin/1 Galaxie;
+  padding-top: 60px;
   text-align: center;
   color: #000000;
 }
